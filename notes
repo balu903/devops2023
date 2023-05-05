@@ -9,3 +9,11 @@ for; do; logic; done
 if condition, else condition then fi
 
 shell script ifs $@
+
+shell operators
+
+Arthimatic 
+relational
+Boolean
+String
+File test
