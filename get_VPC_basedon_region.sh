@@ -3,7 +3,10 @@
 # REGION1=$1
 # REGION2=$2
 # REGION3=$3
-REGIONS=$@
+# REGIONS=$@
+ REGIONS=$*
+echo $REGIONS
+echo "----------------------------------------------------------------------"
 if [ $# -gt 0 ];then
 for REGION in $REGIONS;do
     echo "Lets get the VPC Details from the Region $REGION"
