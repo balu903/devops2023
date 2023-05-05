@@ -3,7 +3,7 @@ set -x -e
 # REGION1=$1
 # REGION2=$2
 # REGION3=$3
-REGIONS=#@
+REGIONS=$@
 if [ $# -gt 0 ];then
 for REGION in $REGIONS;do
     echo "Lets get the VPC Details from the Region $REGION"
