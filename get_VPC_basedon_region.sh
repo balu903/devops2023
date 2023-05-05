@@ -3,7 +3,7 @@ set -x -e
 REGION1=$1
 REGION2=$2
 REGION3=$3
-if [ $# -gt 0]
+if [ $# -gt 0 ]
 then
 echo "Lets get the VPC Details from the Region $REGION1"
 aws ec2 describe-vpcs --region $REGION1 --output json | jq ".Vpcs[].VpcId"
