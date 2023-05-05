@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x -e
+# set -x -e #-e to stop at the error, script wont proccede furthur 
 # REGION1=$1
 # REGION2=$2
 # REGION3=$3
