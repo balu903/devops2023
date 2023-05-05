@@ -1,8 +1,11 @@
 $? $@ $# $*
 
 $@, $*  to provide multiple params
+but $* wont consider the quotes and uses as individual while parsig args in to script 
 $# to count the number of parms given as args
 $? is the command success or failuer 
 $1 $2 $3 individual 
 for; do; logic; done
 if condition, else condition then fi
+
+shell script ifs $@
