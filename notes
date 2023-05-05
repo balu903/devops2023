@@ -1,6 +1,8 @@
 $? $@ $# $*
 
 $@, $*  to provide multiple params
-$# to count the number of parms passed
+$# to count the number of parms given as args
 $? is the command success or failuer 
-$1 $2 $3 individual params
+$1 $2 $3 individual 
+for; do; logic; done
+if condition, else condition then fi
