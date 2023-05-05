@@ -4,6 +4,7 @@ jq --version
 
 ===============
 yum install tmux
+#tmux
 ctrl+B shift+5 to split vertically
 ctrl+B shift+" to split horizontally
 
