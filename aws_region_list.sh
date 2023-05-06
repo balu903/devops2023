@@ -22,4 +22,18 @@ REGIONS=('us-east-1' 'us-east-2' 'ind-hyd-1' 'ap-south-1' 'eu-west-1')
 for REGION in ${REGIONS[@]}; do
     echo "The REGION name is $REGION"
     echo "---------------------------"
+    #VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq "Vpcs[].VpcId" | sed "s/\"/'/g" )
+    VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq "Vpcs[].VpcId" | tr-d '"')
+    #convert the VPC_ID to array as below
+    VPC_ARR= ($VPC_ID)
+    echo ${#VPC_ARR[@]}
+    if [ ${#VPC_ARR[@]} -gt 0 ]
+    then 
+        echo "The REGION name is $REGION" is Valid. Retriving VPC Information..."
+        for VPC in $VPC_ID;do
+           echo $VPC
+        done
+    else
+        echo "Invalid REGION $REGION"
+    fi
 done
