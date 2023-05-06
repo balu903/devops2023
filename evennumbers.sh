@@ -3,7 +3,7 @@
 while true
 do
     read -p "Enter the Number to Check:" NUM
-    if [ $(expr $NUM %2) -eq 0 ]
+    if [ $(expr $NUM % 2) -eq 0 ]
     then
         echo "$NUM is a even number"
     else
