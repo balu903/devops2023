@@ -43,3 +43,7 @@ if [ $NUM1 -gt $NUM2 ]; then
 else 
     echo "$NUM2 is greater than $NUM1"
 fi
+
+#!/bin/bash
+NUM1=$1
+if [ $NUM1 -gt 10 $NUM1 -lt 20 ]
