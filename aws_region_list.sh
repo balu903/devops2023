@@ -14,3 +14,5 @@ echo ${#RGIONS[@]}
 for REGION in ${REGIONS[@]};do
     echo $REGIO
 done
+# to print rane of elements 
+echo ${#RGIONS[@]:0:4}
