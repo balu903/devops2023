@@ -1,6 +1,7 @@
 #!/bin/bash
 #NUM='100'
 while true
+do
     read -p "Enter the Number to Check:" NUM
     if [ $(expr $NUM %2) -eq 0]
     then
