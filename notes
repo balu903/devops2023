@@ -17,3 +17,18 @@ relational
 Boolean
 String
 File test
+
+STDIN:0
+STDOUT:1
+STDERR:2
+/dev/null
+2>/dev/null to redirect output
+
+bash stdtesting 1>/dev/null - Redirect stdout to /dev/null
+bash stdtesting 2>/dev/null - Redirect stderr to /dev/null
+bash stdtesting >/dev/null 2>&1 - Redirect stderr and stdout to /dev/null
+
+tee command to redirect and display on consle
+
+cat /etc/passwd | tee /tmp/log1
+cat /etc/passwd | tee -a /tmp/log1
