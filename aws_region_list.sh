@@ -22,8 +22,8 @@ REGIONS=('us-east-1' 'us-east-2' 'ind-hyd-1' 'ap-south-1' 'eu-west-1')
 for REGION in ${REGIONS[@]}; do
     echo "The REGION name is $REGION"
     echo "---------------------------"
-    #VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq "Vpcs[].VpcId" | sed "s/\"/'/g" )
-    VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq "Vpcs[].VpcId" | tr -d '"')
+    #VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq ".Vpcs[].VpcId" | sed "s/\"/'/g" )
+    VPC_ID=$(aws ec2 describe-vpcs --region $REGION | jq ".Vpcs[].VpcId" | tr -d '"')
     #convert the VPC_ID to array as below
     VPC_ARR=($VPC_ID)
     echo ${#VPC_ARR[@]}
