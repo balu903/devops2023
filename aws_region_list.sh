@@ -35,5 +35,7 @@ for REGION in ${REGIONS[@]}; do
         done
     else
         echo "Invalid REGION $REGION"
+        #break
+        #continue
     fi
 done
