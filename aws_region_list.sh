@@ -29,7 +29,7 @@ for REGION in ${REGIONS[@]}; do
     echo ${#VPC_ARR[@]}
     if [ ${#VPC_ARR[@]} -gt 0 ]
     then 
-        echo "The REGION name is $REGION" is Valid. Retriving VPC Information..."
+        echo "The REGION name is $REGION is Valid. Retriving VPC Information..."
         for VPC in $VPC_ID;do
            echo $VPC
         done
