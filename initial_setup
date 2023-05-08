@@ -1,0 +1,5 @@
+AWS - VPC, routes, subnets, IGW, Linux-VM
+Linux VM  AWS command Line, Json query (JQ) 
+Create new  IAM role "EC2 Admin" and map it to the Linux VM, this will help us to run AWS CLI commands from Linux VM
+Git -repo, Integrated Keys of Laptop and VM to Git -to upload and download to repo
+Visual studio code and its  extensions shell-format by foxunderthemoon, we might install more in future
