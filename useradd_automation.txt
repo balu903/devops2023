@@ -1,0 +1,6 @@
+User creation automation
+1. Check the user already exists, If yes throw error
+2. Generate complex password and assign the password
+3 Expire the password
+4. Force the user to change the password during first login
+5. Create n number of users and Generate random passwords for them
