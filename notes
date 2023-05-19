@@ -32,3 +32,8 @@ tee command to redirect and display on consle
 
 cat /etc/passwd | tee /tmp/log1
 cat /etc/passwd | tee -a /tmp/log1
+
+find - file name, sizes
+sed vs tr -- replaces strings & words
+awk - data processing
+regex
