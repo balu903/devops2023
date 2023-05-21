@@ -30,6 +30,8 @@ bash stdtesting >/dev/null 2>&1 - Redirect stderr and stdout to /dev/null
 
 tee command to redirect and display on consle
 
+python paramico for ssh
+
 cat /etc/passwd | tee /tmp/log1
 cat /etc/passwd | tee -a /tmp/log1
 
@@ -37,3 +39,9 @@ find - file name, sizes
 sed vs tr -- replaces strings & words
 awk - data processing
 regex
+
+
+installing jenkins on ubuntu
+apt update && apt install -y openjdk-8-jdk
+apt update && apt install -y openjdk-11-jdk
+jenkins.io ssite
